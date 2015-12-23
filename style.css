@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Bitter;
+}
+
+.center {
+    text-align: center;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#btnGroup {
+    margin-top: 5px;
+}
+
+
+#resHeader {
+    background: rgba(125, 250, 240, 1);
+    background: -moz-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(4%, rgba(125, 250, 240, 1)), color-stop(14%, rgba(120, 240, 236, 1)), color-stop(48%, rgba(102, 204, 222, 1)), color-stop(88%, rgba(167, 216, 236, 1)), color-stop(100%, rgba(167, 216, 236, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
+    background: linear-gradient(135deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7dfaf0', endColorstr='#a7d8ec', GradientType=1);
+}
+
+#resHeader h1 {
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#resHeader h3 {
+    font-size: 1.6vw;
+    margin: 0;
+}
+
+#work,
+#education,
+#skills,
+#achieve {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+}
+
+#workColor {
+    text-align: center;
+    width: 100%;
+    background-color: #89E1F1;
+}
+
+#eduColor {
+    text-align: center;
+    width: 100%;
+    background-color: #BFE9F1;
+}
+
+#skillColor {
+    text-align: center;
+    width: 100%;
+    background-color: #99DBE7;
+}
+
+#achColor {
+    text-align: center;
+    width: 100%;
+    background-color: #DAECEF;
+}
