@@ -174,21 +174,144 @@ ul {
     background-color: #C8E1E6;
 }
 
+#achieve {
+    padding-bottom: 10px;
+}
+
+li h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
 #printHeader {
     display: none;
 }
 
+#print {
+    display: none;
+}
+
+/*
+############################
+######## PORTFOLIO #########
+############################
+*/
+
+#portContainer {
+    width: 100%;
+    
+}
+
+
+
+/*
+############################
+########## PRINT ###########
+############################
+*/
+
 @media print {
+    #resHeader {
+        display: none;
+    }
+    #name {
+        margin-top: 0;
+        font-size: 20px !important;
+        margin-bottom: 5px;
+        text-align: center
+    }
+    #number {
+        font-size: 12px !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #email {
+        font-size: 12px !important;
+        margin-top: 0;
+        text-align: center;
+    }
     #printHeader {
+        padding-bottom: 10px;
         display: block !important;
     }
     #work,
     #education,
     #skills,
     #achieve {
-        font-size: 10px;
-        padding-left: 25%;
-        padding-right: 25%;
+        font-size: 12px !important;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: left;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1 {
+        font-weight: 400;
+        text-align: left;
+        margin-left: 0;
+    }
+    h2 {
+        font-weight: 400;
+        font-size: 14px !important;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 12px !important;
+    }
+    h4 {
+        font-weight: 400;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    li {
+        font-size: 12px !important;
+    }
+    .glyphicon {
+        display: none;
+    }
+    .head {
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+    }
+    #hidden {
+        display: none;
+    }
+    #html {
+        display: none;
+    }
+    #print {
+        display: flex;
+    }
+    #styleA {
+        width: 33%;
+    }
+    #styleB {
+        width: 33%;
+    }
+    #styleC {
+        width: 33%;
+    }
+    .skillz {
+        text-align: center;
+    }
+    #styleA ul,
+    #styleB ul,
+    #styleC ul {
+        margin-left: 25px;
+    }
+    li h3 {
+        margin: 0;
+    }
+    .highlights {
+        display: none;
     }
 }

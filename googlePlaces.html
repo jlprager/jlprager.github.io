@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet'>
+	<link rel="stylesheet" href="css/googlePlaces.css">
+</head>
+<body>
+
+<h1 id="title">Where are we going today?</h1>
+
+<div id="container">
+
+	<div id="buttons">
+		<input id="search" type="text" placeholder="Search Location">
+		<br>
+		<button class="header selected" id="locationBtn" onclick="hideSaved()">Locations</button>
+		<button class="header" id="savedBtn" onclick="hideLocations()">Saved Places</button>
+	</div>
+
+	<ul id="locationList">
+		<li id="instruct">Please search for a location <br><br> &amp; <br><br> Press &quot;enter&quot; to submit</li>
+	</ul>
+	<ul id="savedList"></ul>
+	<div id="map"></div>
+</div>
+
+<script type="text/javascript" src="googlePlaces.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuR14InYbl95dqy1Jk_4tsosa8OOCzfzI&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
+
+
+
+

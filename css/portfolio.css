@@ -1,0 +1,31 @@
+body {
+	font-family: Bitter;
+}
+nav {
+	background-color: #F5B3BF !important;
+	color: #665B5D;
+}
+.carousel-inner {
+	max-height: 350px !important;
+}
+
+.carousel-content {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	width: 700px;
+	height: 200px;
+	font-size: 85px;
+}
+
+img {
+	opacity: 0.5;
+}
+
+#steamTitle {
+	color: black;
+}

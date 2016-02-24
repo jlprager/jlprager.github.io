@@ -1,7 +1,8 @@
 <head>
+    <title>The Resume</title>
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/resume.css">
 </head>
 
 <body id="resBody">
@@ -11,36 +12,37 @@
         <h3>jaclyn.prager@gmail.com</h3>
     </div>
     <div class="center" id="printHeader">
-        <h1>Jackie Prager</h1>
-        <h3>(650) 773-9996</h3>
-        <h3>jaclyn.prager@gmail.com</h3>
+        <h1 id="name">Jackie Prager</h1>
+        <h4 id="number">(650) 773-9996</h4>
+        <h4 id="email">jaclyn.prager@gmail.com</h4>
     </div>
     <div id="work" class="center">
         <div>
             <div id="workColor">
-                <h1><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Work Experience</h1>
+                <h1 class="head"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Work Experience</h1>
             </div>
             <h2>Software Engineer, CoderCamps</h2>
             <h3>October 2015 - January 2016</h3>
-            <p>Highlights</p>
+            <p class="highlights">Highlights</p>
             <ul>
                 <li>Front-End Lead Engineer in Data Visualization application</li>
-                <li>Created fully functional front-end, back-end, and full-stack applications using the MEAN Stack</li>
+                <li>Created fully functional front-end, back-end, and full-stack apps using the MEAN Stack</li>
                 <li>Implemented authentication using OAuth and external APIs</li>
-                <li>Worked in small groups in an agile environment</li>
+                <li>Agile development environment with SCRUM methodolgy</li>
             </ul>
         </div>
         <h2>Volunteer, San Francisco SafeHouse</h2>
         <h3>May 2014 - May 2015</h3>
-        <p>Highlights</p>
+        <p class="highlights">Highlights</p>
         <ul>
             <li>Assisted with rebuilding main website</li>
             <li>Revitalized Social Media presence</li>
-            <li>Taught self defense and street safety to clients</li>
+            <li id="hidden">Taught self defense and street safety to clients</li>
             <li>Office maintenence and new client screenings</li>
         </ul>
         <h2>Student Clerk, McGlashan & Sarrail</h2>
         <h3>June 2013 - July 2014</h3>
+        <p class="highlights">Highlights</p>
         <ul>
             <li>Created a database of documents for entire estate planning branch of firm</li>
             <li>Laid the foundation for a private case; included research and building a filing system for legitimate v falsified documents </li>
@@ -48,9 +50,9 @@
     </div>
     <div id="skills" class="center">
         <div id="skillColor">
-            <h1><span class="glyphicon glyphicon-th-list"></span>&nbsp;Skills</h1>
+            <h1 class="head"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Skills</h1>
         </div>
-        <div class="container">
+        <div id="html" class="container">
             <div id="styleA">
                 <h3 class="skillz">Javascript Libraries</h3>
                 <ul>
@@ -64,11 +66,12 @@
                     <li>MeteorJS</li>
                     <li>ProcessingJS</li>
                 </ul>
-                <h3 class="skillz">Styling</h3>
+                <h3 class="skillz">Styling Libraries</h3>
                 <ul>
-                    <li>CSS</li>
+                    <li>CSS3</li>
                     <li>Bootstrap</li>
                     <li>Angular Material</li>
+                    <li>PureCSS</li>
                 </ul>
             </div>
             <div id="styleB">
@@ -93,25 +96,76 @@
                 </ul>
             </div>
         </div>
+        <div id="print" class="container">
+            <div id="styleA">
+                <h3 class="skillz">Javascript Libraries</h3>
+                <ul>
+                    <li>JQuery</li>
+                    <li>AngularJS</li>
+                    <li>ExpressJS</li>
+                    <li>NodeJS</li>
+                    <li>MongooseJS</li>
+                    <li>PassportJS</li>
+                    <li>HelmetJS</li>
+                    <li>MeteorJS</li>
+                    <li>ProcessingJS</li>
+                </ul>
+            </div>
+            <div id="styleB">
+                <h3 class="skillz">Styling Libraries</h3>
+                <ul>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>Angular Material</li>
+                    <li>PureCSS</li>
+                </ul>
+                <h3 class="skillz">Databases</h3>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+            <div id="styleC">
+                <h3 class="skillz">HTML5 Frameworks</h3>
+                <ul>
+                    <li>PhaserIO</li>
+                </ul>
+                <h3 class="skillz">Mobile Frameworks</h3>
+                <ul>
+                    <li>Ionic</li>
+                </ul>
+                <h3 class="skillz">Additional Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Processing</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div id="education" class="center">
         <div id="eduColor">
-            <h1><span class="glyphicon glyphicon-education"></span>&nbsp;Education</h1>
+            <h1 class="head"><span class="glyphicon glyphicon-education"></span>&nbsp;Education</h1>
         </div>
-        <h3>Bachelor of Arts - University of San Francisco</h3>
-        <h4>August 2012 - May 2015</h4>
-        <p>Politics, Legal Studies</p>
+        <h2>Bachelor of Arts - University of San Francisco</h2>
+        <h3>August 2012 - May 2015</h3>
+        <h4>Politics, Legal Studies</h4>
     </div>
     <div id="achieve" class="center">
         <div id="achColor">
-            <h1><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Achievements</h1>
+            <h1 class="head"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;Achievements</h1>
         </div>
         <ul>
-            <li>2 Black Belts in Kung fu</li>
-            <li>International titles in weapons &amp; combat competitions</li>
-            <li>200+ hours of volunteer work</li>
-            <li>Graduated from university with honors</li>
+            <li>
+                <h3>2 Black Belts in Kung fu</h3></li>
+            <li>
+                <h3>International titles in weapons &amp; combat competitions</h3></li>
+            <li>
+                <h3>200+ hours of volunteer work</h3></li>
+            <li>
+                <h3>Graduated from university with honors</h3></li>
         </ul>
     </div>
     </div>
 </body>
+
