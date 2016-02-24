@@ -1,0 +1,42 @@
+<head>
+    <title>Contact Jackie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div id="navBtn">
+                <a class="btn navBtn" href="http://jlprager.com">Home</a>
+                <a class="btn navBtn" href="http://jlprager.com/resume">Resume</a>
+                <a class="btn navBtn" href="http://jlprager.com/portfolio">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper" class="container">
+        <div class="row">
+            <div id="personal" class="col-xs-4">
+                <h1 id="name">Jackie Prager</h1>
+                <h3 id="email">jaclyn.prager@gmail.com</h3>
+                <h3 id="phone">(650) 773-9996</h3>
+                <a href="https://www.linkedin.com/in/jackie-prager-239b2292" id="linkedIn"><i class="icon-linkedIn"></i></a>
+                <div></div>
+            </div>
+            <div class="col-xs-8">
+                <form class="form-horizontal" action="//formspree.io/jaclyn.prager@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name">
+                        <input type="email" name="_replyto" class="form-control" placeholder="Your Email">
+                        <input type="text" name="_subject" class="form-control" placeholder="Subject" />
+                        <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="submit" id="submitBtn" class="btn" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
