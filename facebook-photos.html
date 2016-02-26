@@ -1,0 +1,25 @@
+<head>
+    <title>Facebook Photo Albums</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/facebookPhotos.css">
+</head>
+
+<body>
+    <fb:login-button id="facebookLogin" scope="public_profile,email,user_photos" onlogin="checkLoginState();"></fb:login-button>
+    <h1>Facebook Photo Albums</h1>
+
+    <div id="controlsbox" style="display: none">
+        <h5 id="back" onclick="displayAlbums(); clearPhotos(); hideControls();"><i class="icon-back"></i>Back to Albums</h5>
+        <a onclick="ascendingOrder()"><i class="icon-up"></i></a>
+        <a onclick="descendingOrder()"><i class="icon-down"></i></a>
+        <input id="search" placeholder="Search">
+    </div>
+    <div class="Albums" id="masonry-grid"></div>
+    <div id="photos"></div>
+
+    <script src="facebookPhotos.js"></script>
+</body>
+
+</html>
