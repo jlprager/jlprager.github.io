@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-4" id="sliderDiv">
                 <!-- Trigger the modal with a button -->
                 <div type="button" data-toggle="modal" data-target="#myModal"><img class="imgStyling" src="assets/jquerySlider.png"></div>
                 <!-- Modal -->
@@ -111,7 +111,7 @@
                                 <div id="customSlider"></div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button id="modalBtn" type="button" class="btn" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -129,5 +129,6 @@
     <script type="text/javascript" src="jquerySlider/slider.js"></script>
     <script>
         $("#customSlider").buildSlider();
+        $("#myModal").css("margin-top", Math.floor(window.innerHeight/4));
     </script>
 </body>

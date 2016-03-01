@@ -75,12 +75,34 @@ a {
 	margin: 10px;
 }
 
+.modal-header {
+	border-bottom: none;
+	text-align: center;
+	background-color: #BED4FF
+}
+
 .modal-body {
-	height: 150px;
+	height: 140px;
+	background-color: #FCFDFF;
+}
+
+.modal-footer {
+	border-top: none;
+	text-align: center;
+	background-color: #FCFDFF;
+
 }
 
 #customSlider {
-	width: 90%;
+	width: 95%;
+}
+
+#sliderDiv {
+	cursor: pointer;
+}
+
+#modalBtn {
+	background-color: #8EB4FE;
 }
 
 
