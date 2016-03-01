@@ -67,9 +67,7 @@ function getAlbums() {
             Had to stringify to keep from incrementing
             */
 
-            $(".Albums").append("<div class='grid-item' onclick='getPhotos(\"" + response.albums.data[i].id + "\")'><img id='Album" + i + "'><p>" + response.albums.data[i].name + "</p></div>");
-            // $(".Albums").append("<div class='grid-item inline' onclick='getPhotos(\"" + response.albums.data[i].id + "\")'><img id='Album" + i + "'>");
-
+            $(".Albums").append("<div class='grid-item thumb' id='Album" + i + "' onclick='getPhotos(\"" + response.albums.data[i].id + "\")'><span class='text-content'>" + response.albums.data[i].name + "</span></div>");
 
             getCoverPhoto(response.albums.data[i].id, i);
 
@@ -79,6 +77,7 @@ function getAlbums() {
 
 
 function getPhotos(album_ID) {
+    //removes previous album images
     clearAlbums();
     clearPhotos();
     $("#controlsbox").show();
@@ -97,7 +96,8 @@ function getPhotos(album_ID) {
 
 function getCoverPhoto(album_ID, index) {
     FB.api("/" + album_ID + "/picture", function(response) {
-        $("#Album" + index).attr("src", response.data.url);
+        // $("#Album" + index).attr("src", response.data.url);
+        $("#Album" + index).css("background-image", "url(" +response.data.url+ ")");
     });
 
 };
@@ -179,6 +179,19 @@ $container.masonry({
    // columnWidth: 200,
    gutter: 20,
    itemSelector: ".grid-item"
-})}, 3000);
+})
+// $(".grid-item").hover(function (){
+//     $(this).css("content", $(this).data("name"));
+//     console.log($(this).data("name"));
+// });
+
+}, 3000);
+
+// $(".grid-item").hover(function (){
+//     // $(this).css("content", $(this).data("name"));
+//     console.log($(this).data("name"));
+// });
+
+
 
 
