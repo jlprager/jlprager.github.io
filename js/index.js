@@ -98,21 +98,29 @@ function update() {
 
 function resHandler(player, star){
 	star.kill();
-	document.getElementById("resButt").removeAttribute("disabled");
+	// document.getElementById("resButt").removeAttribute("disabled");
+	document.getElementById("resButt").setAttribute("href", "resume.html");
+	document.getElementById("resButt").classList.remove("disabled");
 }
 
 function portHandler(player, star){
 	star.kill();
-	document.getElementById("portButt").removeAttribute("disabled");
+	document.getElementById("portButt").setAttribute("href", "portfolio.html");
+	document.getElementById("portButt").classList.remove("disabled");
 }
 
 function conHandler(player, star){
 	star.kill();
-	document.getElementById("conButt").removeAttribute("disabled");
+	document.getElementById("conButt").setAttribute("href", "contact.html");
+	document.getElementById("conButt").classList.remove("disabled");
 }
 
 document.getElementById("skip").addEventListener("click", function() {
-	document.getElementById("resButt").removeAttribute("disabled");
-	document.getElementById("portButt").removeAttribute("disabled");
-	document.getElementById("conButt").removeAttribute("disabled");
+	document.getElementById("resButt").setAttribute("href", "resume.html");
+	document.getElementById("portButt").setAttribute("href", "portfolio.html");
+	document.getElementById("conButt").setAttribute("href", "contact.html");
+	document.getElementById("resButt").classList.remove("disabled");
+	document.getElementById("portButt").classList.remove("disabled");
+	document.getElementById("conButt").classList.remove("disabled");
+	
 })

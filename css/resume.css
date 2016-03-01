@@ -2,21 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Bitter;
-    /*    background-color: #141318;
-    color: #615F6B;*/
+    background-color: #ECECEC;
+    color: #333;
 }
-
-
-/*#tempBody {
-    background-color: ;
-}*/
 
 #resBody {
     background-color: #ECECEC;
-}
-
-#gameBody {
-    background-color: #16191C;
 }
 
 #index {
@@ -51,7 +42,7 @@ body {
 }*/
 
 .btn {
-    background-color: #5A8EC1;
+    background-color: #8EB4FE;
 }
 
 

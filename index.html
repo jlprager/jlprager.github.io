@@ -1,9 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="js/phaser.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/game.css">
 </head>
-<body id="tempBody">
-<h1 id="index" class="jumbotron">Site Currently Under Construction <br> <button id="tempBtn" class="btn" onclick="location.href ='resume.html'">Check Out My Resume</button></h1>
-<!-- <button id="tempBtn" class="btn">Check Out My Resume</button> -->
+
+<body id="gameBody">
+    <h1 class="center">Collect the stars to unlock pieces</h1>
+    <div id="btnGroup">
+            <ul id="listStyle">
+                <li>
+                    <a id="resButt" class="btnClass disabled">Resumé</a>
+                </li>
+                <li>
+                <a id="portButt" class="btnClass disabled">Portfolio</a>
+                </li>
+                <li>
+                <a id="conButt" class="btnClass disabled">Contact</a>
+                </li>
+                <li>
+                <a id="skip" class="btnClass">Skip Game</a>
+                </li>
+            </ul>
+        </div>
+    <div id="game"></div>
+    <h2 class="center">*Use your arrow keys to move*</h2>
+    <script src="js/index.js"></script>
 </body>
+
+</html>
