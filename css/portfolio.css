@@ -1,10 +1,33 @@
 body {
 	font-family: Bitter;
+  	background-color: #FCFDFF;
+
 }
 nav {
 	background-color: #F5B3BF !important;
 	color: #665B5D;
 }
+
+.container {
+	margin-top: 50px;
+}
+
+.row {
+	height: 200px;
+}
+
+.imgStyling {
+	width: 100%;
+}
+
+.projectTitle {
+	text-align: center;
+	margin-top: -100px;
+	font-weight: bold;
+	font-size: 30px;
+	opacity: 1 !important;
+}
+
 .carousel-inner {
 	max-height: 350px !important;
 }
@@ -22,7 +45,7 @@ nav {
 	font-size: 85px;
 }
 
-img {
+.carousel-inner img {
 	opacity: 0.5;
 }
 
@@ -50,6 +73,14 @@ a {
 
 .icon-envelope {
 	margin: 10px;
+}
+
+.modal-body {
+	height: 150px;
+}
+
+#customSlider {
+	width: 90%;
 }
 
 

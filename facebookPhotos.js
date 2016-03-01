@@ -79,7 +79,6 @@ function getAlbums() {
 
 
 function getPhotos(album_ID) {
-    //removes previous album images
     clearAlbums();
     clearPhotos();
     $("#controlsbox").show();

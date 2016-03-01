@@ -2,17 +2,19 @@
     <title>The Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquerySlider/slider.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-        <div id="navBtn">
-            <a href="http://jlprager.com"><i class="icon-home"></i></a>
-            <a href="http://jlprager.com/resume"><i class="icon-resume"></i></a>
-            <a><i class="icon-envelope"></i></a>
-        </div>
+            <div id="navBtn">
+                <a href="http://jlprager.com"><i class="icon-home"></i></a>
+                <a href="http://jlprager.com/resume"><i class="icon-resume"></i></a>
+                <a><i class="icon-envelope"></i></a>
+            </div>
         </div>
     </nav>
     <div class="container">
@@ -60,10 +62,72 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-4">HELLO</div>
-            <div class="col-xs-8">WORLD</div>
+            <a href="http://candivision.herokuapp.com">
+                <div class="col-xs-4"><img class="imgStyling" src="assets/candivision.png">
+                </div>
+            </a>
+            <div class="col-xs-8">
+                <h2>Candivision</h2>
+                <h4>Role: Lead Front-End Engineer</h4>
+                <h5>About: Candivision is a data visualization application for the 2016 Presidential race. The central feature of this site is a series of real-time visualizations based on streaming Twitter data.</h5>
+            </div>
+        </div>
+        <div class="row">
+            <a href="http://candivision.steamquests.com">
+                <div class="col-xs-4"><img class="imgStyling" src="assets/steamquests.png">
+                </div>
+            </a>
+            <div class="col-xs-8">
+                <h2>SteamQuests</h2>
+                <h4>Full-Stack Application</h4>
+                <h5>About: SteamQuests is a web app that allows a user to create custom lists specific to a their currently owned games via Steam.</h5>
+            </div>
+        </div>
+        <div class="row">
+            <a href="http://jlprager.com/googlePlaces">
+                <div class="col-xs-4"><img class="imgStyling" src="assets/googlePlaces.png">
+                </div>
+            </a>
+            <div class="col-xs-8">
+                <h2>Google Places</h2>
+                <h4>Front-End Application</h4>
+                <h5>About: Google Places is a custom web application that calls the Places library from the Google Maps API. Users can search for a location and save them in a separate list via local storage.</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <!-- Trigger the modal with a button -->
+                <div type="button" data-toggle="modal" data-target="#myModal"><img class="imgStyling" src="assets/jquerySlider.png"></div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">JQuery Slider Control (Interact with me!)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="customSlider"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8">
+                <h2>Simple JQuery Slider Plugin</h2>
+                <h4>Front-End Plugin</h4>
+                <h5>About: This is a custom JQuery slider control plugin.</h5>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquerySlider/slider.js"></script>
+    <script>
+        $("#customSlider").buildSlider();
+    </script>
 </body>
