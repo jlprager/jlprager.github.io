@@ -1,35 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <script type="text/javascript" src="js/phaser.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="css/game.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="slick.css" />
+    <link rel="stylesheet" href="simple-grid.css" />
+    <!-- <link rel="stylesheet" href="slick-theme.css"/> -->
+    <link rel="stylesheet" href="index.css" />
 </head>
 
-<body id="gameBody">
-    <h1 class="center">Collect the stars to unlock pieces</h1>
-    <div id="btnGroup">
-            <ul id="listStyle">
-                <li>
-                    <a id="resButt" class="btnClass disabled">Resumé</a>
-                </li>
-                <li>
-                <a id="portButt" class="btnClass disabled">Portfolio</a>
-                </li>
-                <li>
-                <a id="conButt" class="btnClass disabled">Contact</a>
-                </li>
-                <li>
-                <a id="skip" class="btnClass">Skip Game</a>
-                </li>
-            </ul>
+<body>
+    <div id="hero">
+        <div class="circle">
+            <div id="genInfo">
+                <h1>Jackie Prager</h1>
+                <br>
+                <h3>UX Researcher & Designer,<br>Front-End Developer,<br>Designer, Gamer</h3>
+                <br>
+                <h5><a href="mailto:jaclyn.prager@gmail.com">jaclyn.prager@gmail.com</a><br>(650) 773-9996<br><a href="#">Resume</a></h5>
+            </div>
         </div>
-    <div id="game"></div>
-    <h2 class="center">*Use your arrow keys to move*</h2>
-    <script src="js/index.js"></script>
+    </div>
+    <ul id="sliderNav">
+        <li id="uxNav">UX</li>
+        <li id="webNav">WEB</li>
+        <li id="visNav">DESIGN</li>
+        <li id="aboutNav">ABOUT ME</li>
+    </ul>
+    <div class="slider">
+        <!-- UX CONTENT -->
+        <div>
+            <div id="uxContent" class="container">
+                <div class="row">
+                    <!-- CURRENT -->
+                    <!--                     <div class="col-6" id="current">
+                        <h2>Current Project</h2>
+                        <img src="assets/web/googlePlaces.png">
+                    </div> -->
+                    <!-- SYNC.GG -->
+                    <div class="col-6" id="sync">
+                        <h2>Sync.gg</h2>
+                        <img src="assets/syncggHero.jpg">
+                        <p>UX project. Includes interviews, personas, feature prioritization, card sort, wireframes (lofi &amp; hifi) and prototyping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- WEB CONTENT -->
+        <div>
+            <div id="webContent" class="container">
+                <!-- FIRST ROW -->
+                <div class="row">
+                    <!-- STEAM QUESTS -->
+                    <div class="col-6" id="steamQuests">
+                        <h2>Steam Quests</h2>
+                        <a href="https://steamquests.herokuapp.com/"><img src="assets/web/steamquests.png"></a>
+                        <p>SteamQuests is a full stack web app that allows a user to create custom lists specific to a their currently owned games via Steam.
+                            <br>Featured technologies: Steam API, Twitter Bootstrap</p>
+                    </div>
+                    <!-- GOOGLE PLACES -->
+                    <div class="col-6" id="googlePlaces">
+                        <h2>Google Places</h2>
+                        <a href="#"><img src="assets/web/googlePlaces.png"></a>
+                        <p>Google Places is a custom front end web application that calls the Places library from the Google Maps API. Users can search for a location and save them in a separate list via local storage.
+                            <br>Featured technologies: Google API, Local Storage</p>
+                    </div>
+                </div>
+                <!-- SECOND ROW -->
+                <div class="row">
+                    <!-- QuikPix -->
+                    <div class="col-6" id="quikPix">
+                        <h2>QuikPix</h2>
+                        <a href="http://quikpix.herokuapp.com"><img src="assets/web/quikpix.png"></a>
+                        <p>QuikPix is a full-stack Instagram Clone. Users can upload images via FilePicker, like, comment and rate the photos posted by the other site users.
+                            <br>Featured technologies: FilePicker, Twitter Bootstrap</p>
+                    </div>
+                    <!-- POM CLOCK -->
+                    <div class="col-6" id="pomClock">
+                        <h2>Pomodoro Clock</h2>
+                        <a href="#"><img src="assets/web/pomClock.png"></a>
+                        <p>Based on the pomodoro technique, a user can use this front end web app to break down work intervals between sessions and breaks. The application displays the remaining time as it fills the page with a new color.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- VISUAL DESIGN CONTENT -->
+        <div>
+            <div id="visContent" class="container">
+                <div class="row">
+                    <div class="col-12" id="myga.me">
+                        <h2>Myga.me</h2>
+                        <img src="assets/mygame/mygameHero.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT ME CONTENT -->
+        <div>
+            <div id="aboutMe" class="container">
+                <!-- SOCIAL -->
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <ul id="socialNav">
+                            <li>
+                                <a href="https://www.linkedin.com/in/jackie-prager-239b2292"><img id="linkedin" src="assets/social/linkedin.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/thequietlioness/"><img id="insta" src="assets/social/insta.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitch.tv/jakandtesty"><img id="twitch" src="assets/social/twitch.png"></a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <!-- JOURNEY -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2>My Journey</h2>
+                        <h3 class="inline">I am a </h3>
+                        <p class="inline">Bay Area native who loves all things design, technology and gaming. I graduated from University of San Francisco in May 2015 with a Bachelor's in Politics and a minor concenteation in Legal Studies. Most of my studies included advocacy and a focus in helping underrepresented communities. However, through my studies, I realized that the most effective way to help people in need might be through technology. Before I graduated, I took some Computer Science classes to test the waters and began my journey into tech.
+                            <br>After graduation, I enrolled in a programming bootcamp hoping to learn about Front End Web Development. While my programming skills got stronger, I was drawn to the User Experience &amp; Design aspects of web. I took some classes in Visual Design and User Experience Design and am currently a User Experience Researcher &amp; Designer. My background in politics gives me a unique understanding of human nature and working with so many high-risk indiviudals taught me how to design for different social groups.
+                            <br>In my spare time, I have been studying Video Game design and user experience design in the beauty &amp; health field.</p>
+                    </div>
+                    <!-- <div class="col-6">
+                <img src="#">
+            </div> -->
+                </div>
+                <!-- HOBBIES -->
+              <!--   <div class="row">
+                    <div class="col-12">
+                        <h2>Interests</h2>
+                        <p>In my spare time, I have been studying game design.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- END OF SLIDER -->
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

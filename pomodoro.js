@@ -126,4 +126,3 @@ function cancel(){
 	setSession();
 	setBreak();
 }
-

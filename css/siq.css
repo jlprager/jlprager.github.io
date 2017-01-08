@@ -1,0 +1,23 @@
+/*DOCUMENT*/
+html, body {
+	height : 100%
+}
+body {
+	font-family : "Lato", sans-serif;
+	padding : 0;
+	margin : 0;
+	overflow-x: hidden;
+}
+
+/*BANNER*/
+#hero {
+	padding : 1em 0;
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+	background-size : cover;
+	text-align : center;
+	width : auto;
+	height : 5%;
+	background-color : #8DC9C9;
+	font-size : 2em;
+}

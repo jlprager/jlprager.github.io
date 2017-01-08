@@ -1,115 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Bitter;
-    background-color: #ECECEC;
-    color: #333;
+    font-family: Lato;
 }
 
-#resBody {
-    background-color: #ECECEC;
-}
-
-#index {
-    text-align: center;
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 6vw;
+h2, h3, h4 {
+    margin : 0.5em 0;
 }
 
 .center {
     text-align: center;
 }
 
-#game {
-    position: absolute;
-    width: 100%;
-    /*    padding-left: 0;
-    padding-right: 0;*/
-    /*    margin-left: auto;
-    margin-right: auto;*/
-    display: inline;
+#header {
+    height: 20%;
+    background-color : #A2DADF;
+    padding-top : 1em;
 }
 
-
-/*canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline;
-}*/
-
-.btn {
-    background-color: #8EB4FE;
-}
-
-
-/*@media (min-width: 1150px) {
-    #btnGroup {
-        margin-top: 20%;
-        margin-left: 3%;
-    }
-    canvas {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline;
-    }
-}
-*/
-
-
-/*@media (max-width: 1149px) {
-*/
-
-#btnGroup {
-    text-align: center;
-}
-
-#listStyle li {
-    display: inline-block;
-}
-
-canvas {
-    margin-top: 50px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline;
-}
-
-
-/*}
-*/
-
-#listStyle {
-    list-style-type: none;
-}
-
-#resHeader {
-    background: rgba(125, 250, 240, 1);
-    background: -moz-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(4%, rgba(125, 250, 240, 1)), color-stop(14%, rgba(120, 240, 236, 1)), color-stop(48%, rgba(102, 204, 222, 1)), color-stop(88%, rgba(167, 216, 236, 1)), color-stop(100%, rgba(167, 216, 236, 1)));
-    background: -webkit-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
-    background: linear-gradient(135deg, rgba(125, 250, 240, 1) 4%, rgba(120, 240, 236, 1) 14%, rgba(102, 204, 222, 1) 48%, rgba(167, 216, 236, 1) 88%, rgba(167, 216, 236, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7dfaf0', endColorstr='#a7d8ec', GradientType=1);
-}
-
-#resHeader h1 {
-    font-size: 4vw;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-#resHeader h3 {
-    font-size: 1.6vw;
-    margin: 0;
+#header h1 {
+    margin : 0.5em 0;
 }
 
 .container {
@@ -144,34 +54,42 @@ ul {
 #workColor {
     text-align: center;
     width: 100%;
-    background-color: #89E1F1;
+    background-color: #1DA9AF;
 }
 
 #eduColor {
     text-align: center;
     width: 100%;
-    background-color: #B0E5EF;
+    background-color: #8CE9ED;
 }
 
 #skillColor {
     text-align: center;
     width: 100%;
-    background-color: #99DBE7;
+    background-color: #60D7DD;
 }
 
 #achColor {
     text-align: center;
     width: 100%;
-    background-color: #C8E1E6;
+    background-color: #C4F7F9;
 }
 
 #achieve {
     padding-bottom: 10px;
 }
 
+#education h2, #education h3, #education h4 {
+    font-weight: normal;
+}
+
 li h3 {
     margin-top: 5px;
     margin-bottom: 0;
+}
+
+#achieve h3 {
+    font-weight : normal;
 }
 
 #printHeader {
@@ -182,17 +100,6 @@ li h3 {
     display: none;
 }
 
-/*
-############################
-######## PORTFOLIO #########
-############################
-*/
-
-#portContainer {
-    width: 100%;
-    
-}
-
 
 
 /*
@@ -201,7 +108,7 @@ li h3 {
 ############################
 */
 
-@media print {
+/*@media print {
     #resHeader {
         display: none;
     }
@@ -306,3 +213,4 @@ li h3 {
         display: none;
     }
 }
+*/

@@ -1,0 +1,56 @@
+/*DOCUMENT*/
+html, body {
+	height : 100%
+}
+body {
+	font-family : "Lato", sans-serif;
+	padding : 0;
+	margin : 0;
+	overflow-x: hidden;
+}
+
+[class*="col-"] img{
+    width: 100%;
+}
+
+/*BANNER*/
+#hero {
+	padding : 1em 0;
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+	background-size : cover;
+	text-align : center;
+	width : auto;
+	height : 5%;
+	background-color : #8DC9C9;
+	font-size : 2em;
+}
+
+.inline {
+	display : inline;
+}
+
+.center {
+	text-align : center;
+}
+
+#problemHeader {
+	margin : 26.5px 0;
+}
+
+.persona {
+	max-width : 100%;
+	max-height : 100%;
+}
+
+.persona:hover {
+	cursor : pointer;
+}
+
+#personaHeader {
+	margin: 26.5px 0;
+}
+
+#wireframeHeader {
+	margin : 26.5px 0;
+}

@@ -1,0 +1,148 @@
+/*DOCUMENT*/
+html, body {
+	height: 100%
+}
+body {
+	font-family : "Lato", sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img {
+	max-height : 100%;
+	max-width : 100% ;
+}
+
+/*HERO & BANNER*/
+
+#hero {
+	background-image : url("assets/homeHero.jpg");
+	padding : 1em 0;
+	background-repeat : no-repeat;
+	background-position : 90% 65%;
+	background-size : cover;
+	text-align : center;
+}
+
+.circle {
+	background-color: rgba(255,255,255,0.7);
+	border-radius : 50%;
+	height : 25em;
+	width : 25em;
+	display : inline-block;
+	text-align : center;
+}
+
+.inline {
+	display : inline;
+}
+
+#genInfo {
+	padding : 3em 0;
+	text-align : center;
+}
+
+h1, h3, h5 {
+	margin : 0;
+}
+
+/*NAVIGATION*/
+
+#sliderNav {
+	font-size: 0;
+	height : 50px;
+	margin-top : 15px;
+	width : 100%;
+	text-align : center;
+	padding: 0;
+}
+
+#sliderNav li{
+	font-size: 16px;
+	display : inline;
+	list-style : none; 
+	padding : 10px 12px;
+	/*border : solid 1px black;*/
+	border-radius: 5px;
+}
+
+#sliderNav li:hover {
+	background-color: #eee !important;
+	cursor : pointer;
+}
+
+#sliderNav .selectedNav:hover {
+	background-color: #a2d9df !important;
+}
+
+
+
+
+
+
+
+
+
+/*SLIDER CONTENT*/
+div:focus {
+	outline: none;
+}
+
+.container {
+	width : 100% !important;
+	margin : 1em !important;
+	max-width : 100% !important;
+	/*height : 100% !important;*/
+}
+
+/* Not sure what this is for, turned off to center columns*/
+/*.row [class^="col"] {
+	margin : 10px !important;
+}*/
+
+
+
+
+/*WEBDEV ASSETS*/
+#googlePlaces img{
+	border : 1px solid grey;
+}
+
+#jqueryTitle, #jqueryTitle2 {
+margin-bottom : 0;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: auto;
+    min-height: 1px;
+}
+
+
+/*SOCIAL - ABOUT ME*/
+#socialNav {
+	list-style-type : none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#socialNav li {
+	display: inline;
+}
+
+#socialNav li a {
+	display : inline-block;
+	padding : 14px 16px
+}
+
+#socialNav li a img {
+	margin : 0;
+	width : 50px;
+	height : 50px;
+}
+
