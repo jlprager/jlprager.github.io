@@ -21,3 +21,12 @@ body {
 	background-color : #8DC9C9;
 	font-size : 2em;
 }
+
+
+#back {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	width: 50px;
+	height: 50px;
+}
