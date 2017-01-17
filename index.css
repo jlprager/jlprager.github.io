@@ -101,7 +101,10 @@ div:focus {
 	margin : 10px !important;
 }*/
 
-
+/*UX ASSETS*/
+#uxContent img {
+	height: 300px;
+}
 
 
 /*WEBDEV ASSETS*/
